@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
+import promise from 'redux-promise';
 import { createStore, applyMiddleware } from 'redux';
 import { HashRouter as Router, Route } from 'react-router-dom';
 import PostIndex from './components/post_index';
 import PostNew from './components/post_new';
 import PostDetails from './components/post_detail';
 import reducers from './reducers';
-import promise from 'redux-promise';
 
 const createStoreWithMiddleware = applyMiddleware(promise)(createStore);
 
@@ -21,4 +21,5 @@ ReactDOM.render(
       </div>
     </Router>
   </Provider>
-  , document.querySelector('.container'));
+  , document.querySelector('.container'),
+);
