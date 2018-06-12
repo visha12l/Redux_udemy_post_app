@@ -40,8 +40,8 @@ class PostDetails extends Component {
 
 PostDetails.defaultProps = {
   post: [],
-  fetchPostDetails: undefined,
-  deletePost: undefined,
+  fetchPostDetails: null,
+  deletePost: null,
 };
 
 PostDetails.propTypes = {

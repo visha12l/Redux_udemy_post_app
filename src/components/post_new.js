@@ -57,8 +57,8 @@ class PostNew extends Component {
 }
 
 PostNew.defaultProps = {
-  handleSubmit: undefined,
-  createPost: undefined,
+  handleSubmit: null,
+  createPost: null,
 };
 
 PostNew.propTypes = {

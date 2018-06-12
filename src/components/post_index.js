@@ -29,7 +29,7 @@ class PostIndex extends Component {
 
 PostIndex.defaultProps = {
   posts: [],
-  fetchPosts: undefined,
+  fetchPosts: null,
 };
 
 PostIndex.propTypes = {
